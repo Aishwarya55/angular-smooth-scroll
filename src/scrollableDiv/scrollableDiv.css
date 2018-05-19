@@ -1,0 +1,38 @@
+.repeater-div {
+    display: inline-block;
+    padding:14px
+}
+.wrapper{
+    text-align: left; 
+    position: relative;
+    margin-bottom: 20px;   
+    padding-top: 5px;
+    display: inline-block
+}
+.scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;   
+    white-space:nowrap;
+    
+}
+.scroll::-webkit-scrollbar{
+    display:none
+}
+.pull-left{
+    float:left;
+    position: relative;
+    top: 25%;
+    padding:24px;
+    cursor: pointer
+}
+.pull-right{
+    float:right;
+    position: relative;
+    top: 25%;
+    padding:24px;
+    cursor: pointer;
+    
+}
+.pull-left:hover, .pull-right:hover{
+    background: #ddd;
+}

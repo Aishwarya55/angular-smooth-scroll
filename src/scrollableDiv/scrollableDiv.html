@@ -1,0 +1,14 @@
+<div ng-attr-style = "width: calc( {{$ctrl.width}}px + 126px); height: {{$ctrl.height}}px">
+    <span class="pull-left" ng-click="$ctrl.scroll('left')">&#10094;</span>
+    <div class="wrapper" ng-style = "$ctrl.width ? {'width':{{$ctrl.width}}} : {'width':100} ">
+        <div class="scroll" ng-style="$ctrl.height ? {'height':{{$ctrl.height}}} : {'height':100}">
+            <span class="repeater-div" ng-repeat="data in $ctrl.data track by $index" >
+           <span ng-if="$ctrl.type === 'text'"> {{data}} </span>
+           <img ng-src = "{{data}}" ng-if="$ctrl.type === 'image'">
+        </span>
+
+            </span>
+        </div>
+    </div>
+    <span class="pull-right" ng-click="$ctrl.scroll('right')">&#10095;</span>
+</div>
